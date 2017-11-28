@@ -1,0 +1,17 @@
+[include]
+
+[ignore]
+.*/node_modules/.*
+.*/flow-typed/.*
+.*/public/.*
+
+[libs]
+
+[lints]
+
+[options]
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
+
+[version]
+>=0.59.0

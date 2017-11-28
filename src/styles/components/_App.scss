@@ -1,0 +1,15 @@
+.app {
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $mainBlue;
+  border-radius: 50px;
+
+  &__text {
+    width: 300px;
+    margin: 0 auto;
+    color: $mainWhite;
+    text-align: center;
+  }
+}
