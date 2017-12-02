@@ -45,7 +45,7 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader', 'postcss-loader'],
+          use: ['css-loader', 'postcss-loader', 'sass-loader'],
         }),
       },
       {
@@ -76,7 +76,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     }),
-    new ExtractTextPlugin('bundle.css'),
+    new ExtractTextPlugin('bundle.[hash].css'),
     new webpack.HotModuleReplacementPlugin(),
   ],
   devtool: 'source-map',
